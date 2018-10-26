@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 
 body {
-    background: url('./salad.jpg') no-repeat center center fixed;
+    background: url('../img/salad.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    overflow: hidden;
+    /*overflow: hidden;*/
     background-color: WhiteSmoke;
     font-family: 'Great Vibes', cursive;
     color: white;
@@ -17,6 +17,7 @@ body {
     margin: 0;
     top: 0;
     left: 0;
+    font-size: 1em;
 }
 
 nav {
@@ -29,26 +30,12 @@ nav {
 nav > a {
     color: #FFF;
     font-size: 1.2em;
-    padding: 0 1em;
+    padding: 0 1vw;
 }
 
 #orderOnline {
     position: absolute;
     right: 0;
-}
-
-.container {
-    width: 80%;
-    max-height: 80%;
-    position: relative;
-    background: #333;
-    margin: auto;
-    top: 15%;
-    text-align: justify;
-}
-
-.container > h1 {
-    text-align: center;
 }
 
 footer {
@@ -77,20 +64,4 @@ address > a {
     color: GoldenRod;
 }
 
-@media (max-width: 500px) {
-    
-    
-    
-}
-
-@media (min-width: 501px) and (max-width: 1000px) {
-    
-    
-    
-}
-
-@media (min-width: 1001px) and (max-width: 1500) {
-    
-    
-    
-}
+/* =============================== */
