@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+body {
+    background: url('../img/cornucopia.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*overflow: hidden;*/
+    background-color: WhiteSmoke;
+    font-family: 'Courgette', cursive;
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    font-size: 1em;
+}
+
+.container {
+    
+    width: 80%;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    background: rgba(55, 55, 55, .5);
+    text-align: center;
+    
+}
+
+.container > p {
+    
+    font-size: 2em;
+    
+}
+
+#scrollButton {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 5%;
+    left: 43%;
+    border-radius: 50px;
+    background-color: #4A0000;
+    border: none;
+    color: WhiteSmoke;
+    font-size: 3em;
+    opacity: 0.6;
+}
