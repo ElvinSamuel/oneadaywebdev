@@ -1,0 +1,133 @@
+body {
+    
+    /*background: url('./../img/ES.png') no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*overflow: hidden;*/
+    
+    width: 100%;
+    height: 100%;
+    background-color: #DDD;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    text-align: right;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: GoldenRod;
+}
+
+nav > a {
+    margin: 20px;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+scroll-container {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+scroll-page {
+  display: block;
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  width: 100%;
+  height: 100%;
+  margin: 20px 0;
+}
+
+#plaque {
+    width: 80%;
+    height: 60%;
+    margin: 50px auto;
+    /*background-color: #555;*/
+    white-space: nowrap;
+    text-align: center;
+}
+
+#plaque > h1 {
+    font-size: 3em;
+}
+
+#plaque > h2 {
+    font-size: 2em;
+}
+
+#plaque > p {
+    font-size: 1.2em;
+}
+
+#headBackground {
+    width: 200px;
+    height: 200px;
+    background-color: #222;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#headBackground > img {
+    height: 100%;
+}
+
+#resume {
+    background-color: GoldenRod;
+}
+
+#about {
+    background-color: #4A0000;
+}
+
+#contact {
+    background-color: #00688B;
+}
+
+#map {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+}
+
+.socialMedia {
+    z-index: 1;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: GoldenRod;
+    right: 10px;
+    bottom: 30px;
+    text-align: center;
+}
+
+.socialMedia > i {
+    position: absolute;
+    top: 16px;
+    left: 18px;
+}
+
+#linkedin {
+    bottom: 90px;
+}
+
+#codepen {
+    bottom: 150px;
+}
