@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url('https://fonts.googleapis.com/css?family=Cardo');
 
 body {
-    background: url('../img/cornucopia.jpg') no-repeat center center fixed;
+    /*background: url('./../img/cornucopia.jpg') no-repeat center center fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     /*overflow: hidden;*/
-    background-color: WhiteSmoke;
-    font-family: 'Courgette', cursive;
+    background-color: #333;
+    font-family: 'Cardo', serif;
     color: white;
     width: 100%;
     height: 100%;
@@ -40,8 +40,8 @@ body {
 }
 
 #scrollButton {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     position: absolute;
     bottom: 5%;
     left: 43%;
@@ -49,6 +49,140 @@ body {
     background-color: #4A0000;
     border: none;
     color: WhiteSmoke;
-    font-size: 3em;
+    font-size: 2.5em;
     opacity: 0.6;
+}
+
+nav {
+    position: fixed;
+    text-align: right;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #03331F;
+}
+
+nav > a {
+    margin: 20px;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+#logo {
+    width: auto;
+    height: 90%;
+    position: absolute;
+    left: 10px;
+    top: 3px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+scroll-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+scroll-page {
+  display: block;
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  height: 100%;
+  margin: 20px 20px;
+  background-color: #333;
+  /*opacity: 0.9;*/
+}
+
+#home {
+    background: url(./../img/boats.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#childrenDiv {
+    height: 50%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#childrenDiv > img {
+    width: 80%;
+    padding: 2%;
+}
+
+#infoAbout {
+    width: 80%;
+    height: 50%;
+    overflow: auto;
+    text-align: center;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3px;
+}
+
+#titlePage {
+    position: relative;
+    width: 80%;
+    top: 10%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+
+}
+
+#socialMedia > span {
+    z-index: 2;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: GoldenRod;
+    text-align: center;
+    color: #03331F;
+}
+
+#instagram {
+    bottom: 10px;
+    right: 10px;
+}
+
+#twitter {
+    bottom: 10px;
+    right: 70px;
+}
+
+#facebook {
+    bottom: 10px;
+    right: 130px;
+}
+
+#facebook > i {
+    position: relative;
+    top: 12.5px;
+}
+
+#twitter > i {
+    position: relative;
+    top: 12.5px;
+}
+
+#instagram > i {
+    position: relative;
+    top: 12.5px;
 }
