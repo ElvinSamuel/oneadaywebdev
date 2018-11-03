@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+
+html, body {
+    overflow: scroll;
+    overflow: hidden;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
 body {
     
     /*background: url('./../img/ES.png') no-repeat center center fixed;*/
@@ -5,8 +19,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: 'Lora', serif;
     /*overflow: hidden;*/
-    
     width: 100%;
     height: 100%;
     background-color: #DDD;
@@ -25,7 +39,7 @@ nav {
     left: 0;
     width: 100%;
     height: auto;
-    background-color: GoldenRod;
+    background-color: #00688B;
 }
 
 nav > a {
@@ -35,9 +49,17 @@ nav > a {
     text-decoration: none;
 }
 
+#es_logo > img {
+    height: 1em;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+}
+
 scroll-container {
   display: block;
   position: absolute;
+  color: white;
   top: 0;
   left: 0;
   width: 100%;
@@ -53,6 +75,7 @@ scroll-page {
   width: 100%;
   height: 100%;
   margin: 20px 0;
+  overflow: hidden;
 }
 
 #plaque {
@@ -60,7 +83,7 @@ scroll-page {
     height: 60%;
     margin: 50px auto;
     /*background-color: #555;*/
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     text-align: center;
 }
 
@@ -81,6 +104,7 @@ scroll-page {
     height: 200px;
     background-color: #222;
     border-radius: 50%;
+    border: 2px solid white;
     margin: auto;
 }
 
@@ -88,8 +112,12 @@ scroll-page {
     height: 100%;
 }
 
+#home {
+    background-color: #333;
+}
+
 #resume {
-    background-color: GoldenRod;
+    background-color: #B78727;
 }
 
 #about {
@@ -98,30 +126,33 @@ scroll-page {
 
 #contact {
     background-color: #00688B;
+    opacity: 0.9;
+    text-align: center;
 }
 
-#map {
-    width: 80%;
-    height: 50%;
-    margin: auto;
-}
+
 
 .socialMedia {
     z-index: 1;
     position: fixed;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: GoldenRod;
-    right: 10px;
+    right: 20px;
     bottom: 30px;
     text-align: center;
+    opacity: .8;
+}
+
+.socialMedia:hover {
+    opacity: 1;
 }
 
 .socialMedia > i {
     position: absolute;
-    top: 16px;
-    left: 18px;
+    top: 12px;
+    left: 13px;
 }
 
 #linkedin {
@@ -130,4 +161,172 @@ scroll-page {
 
 #codepen {
     bottom: 150px;
+}
+
+/* ============= Contact Form Stuff ============== */
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #222;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #222;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #222;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #222;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #222;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    #222;
+}
+
+#map {
+    width: 80%;
+    height: 50%;
+    margin: 20px auto;
+}
+
+#contactForm {
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+input[name="name"] { 
+    width: 60%;
+    background-color: GoldenRod;
+    font-size: 1.3em;
+    border: 2px solid WhiteSmoke;
+    margin-top: 20px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+input[name="email"] { 
+    width: 60%;
+    background-color: GoldenRod;
+    font-size: 1.3em;
+    border: 2px solid WhiteSmoke;
+    margin-top: 20px;
+    border-radius: 25px;
+    text-align: center;
+    color: black;
+}
+
+input[type="textarea"] { 
+    width: 60%;
+    background-color: GoldenRod;
+    font-size: 1.3em;
+    border: 2px solid WhiteSmoke;
+    margin-top: 20px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#formButton {
+    width: 50%;
+    height: 10%;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.4em;
+    background-color: GoldenRod;
+    margin: auto;
+}
+
+/*input[type="submit"] {
+    background-color: red;
+    border-radius: 25px;
+    border: 2px solid black;
+    margin-top: 20px;
+    width: 50%;
+    font-size: 1.3em;
+}*/
+
+/* For The Form Page */
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}*/
+
+/*.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}*/
+
+form > span {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+span > input[type="submit"] {
+    width: 30%;
+    background-color: #00688B;
+    color: WhiteSmoke;
+    font-size: 1.3em;
+    border: 2px solid WhiteSmoke;
+    margin-top: 20px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+span > input[type="button"] {
+    width: 30%;
+    background-color: #4A0000;
+    color: WhiteSmoke;
+    font-size: 1.3em;
+    border: 2px solid WhiteSmoke;
+    margin-top: 20px;
+    border-radius: 25px;
+    text-align: center;
+    
+}
+
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
