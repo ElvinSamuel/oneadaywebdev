@@ -39,6 +39,17 @@ body {
     
 }
 
+#interactiveChart {
+    display: inline-block;
+    width: 100%;
+    height: 60%;
+}
+
+#interactiveChart > iframe {
+    width: 100%;
+    height: 100%;
+}
+
 #scrollButton {
     width: 60px;
     height: 60px;

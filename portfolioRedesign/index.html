@@ -30,9 +30,9 @@
             <a id="es_logo" href="#home">
                 <img src="./img/ES.png"></img>
             </a>
-            <a href="#resume">resume</a>
-            <a href="#about">about</a>
-            <a href="#contact">contact me</a>
+            <a href="#resume">Done</a>
+            <a href="#about">Doing</a>
+            <a href="#contact">Contact</a>
         </nav>
         
         <scroll-container>
@@ -57,26 +57,53 @@
             
             
             <scroll-page id="resume">
+                <div class="pageName">What I've Done</div>
+                <span class="underline"></span>
+                
+                <div id="leftSide">
+                    <p> I have over 3 years of experience working on apps, API's, designing, and developing.</p>
+                    <p> I'm entirely self-taught and motivated trying different technologies and creating functioning websites. </p>
+                    <p> I just like building things and figuring out how to make my designs work.</p>
+                    <p id="barInstructions"> Click On The <span>Interactive Bar</span> Below For More Details</p>
+                </div>
+                
+                
+                <!--
+                <div id="rightSide">
+                    <ul>
+                        
+                    </ul>
+                </div>
+                -->
+                
+                <div id="interactiveChart">
+                    <iframe src="sidebar/index.html" frameborder="0"></iframe>
+                </div>
                 
             </scroll-page>
             
             
             <scroll-page id="about">
+                <div class="pageName">What I'm Doing</div>
+                <span class="underline"></span>
                 
                 <div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mi lacus, elementum eu placerat et, vehicula ut magna. Phasellus rutrum et orci finibus viverra. Fusce commodo justo sit amet mi dapibus tristique. Aenean id ultricies felis. Morbi ut quam quis arcu laoreet laoreet eget id libero. Curabitur at velit sodales, feugiat justo a, dictum massa. Phasellus sollicitudin fermentum justo eget tempus.
 
                         Donec ante metus, venenatis vel massa ac, semper efficitur nulla. Etiam tempor, augue et posuere faucibus, mauris augue dictum ligula, non euismod nulla lorem nec ante. Quisque sit amet libero nec ligula volutpat sollicitudin sit amet vitae lectus. Nam vitae cursus urna, et scelerisque quam. Maecenas finibus et enim nec elementum. Nunc aliquet eros vitae nisl fermentum, in tempus dolor varius. Aenean tristique blandit convallis. Aenean consequat ultrices arcu id facilisis. Praesent vel neque felis. In imperdiet porttitor lectus, et mattis elit lobortis vel. Cras massa magna, eleifend in dignissim quis, viverra in enim.
-
-                        Nulla quis erat a orci pretium dapibus ac ac risus. Praesent felis quam, lacinia et facilisis nec, molestie nec tellus. Aenean id orci venenatis, dapibus lorem sit amet, posuere mauris. Vestibulum a ipsum ante. Curabitur hendrerit maximus consectetur. Aliquam consectetur diam felis, non dignissim enim fringilla eu. In sollicitudin purus at neque aliquet, eget convallis magna cursus. Mauris sapien felis, scelerisque ut cursus nec, vestibulum vitae augue. Donec elementum elit magna, quis consequat ligula varius quis. Morbi velit tortor, porttitor sed tincidunt ornare, condimentum sit amet metus. Aliquam neque risus, facilisis vel lobortis vel, fringilla vel ipsum. Nulla pretium ex tristique, finibus arcu nec, ultricies nisl. Etiam dignissim quis enim et sollicitudin. Duis ut bibendum nibh. Vivamus sit amet est sed urna porttitor molestie et a lorem.
                     </p>
                 </div>
+                
+                <iframe src="http://www.PumpernickelPodcast.com" frameborder="0"></iframe>
                 
             </scroll-page>
             
             
             <scroll-page id="contact">
+                <div class="pageName">Contact Me</div>
+                <span class="underline"></span>
+                
                 <div id="map"></div>
                 
                 <div id="formNav" class="overlay">
@@ -99,19 +126,23 @@
                 
                 <button id="formButton" onclick="openForm()">Let's Talk</button>
             </scroll-page>
+            
+            <scroll-page id="footer">
+                <p>ElvinSamuel.com&copy; is copywritten by absolutely no one. If you like the design, feel free to use it.</p>
+            </scroll-page>
         </scroll-container>
         
         
         <div class="socialMedia" id="codepen">
-            <i class="fab fa-github"></i>
+            <a href="#"><i class="fab fa-github"></i></a>
         </div>
         
         <div class="socialMedia" id="linkedin">
-            <i class="fab fa-linkedin-in"></i>
+            <a href="#"><i class="fab fa-codepen"></i></a>
         </div>
 
         <div class="socialMedia" id="twitter">
-            <i class="fab fa-twitter"></i>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
         
         <script type="text/javascript" src="./js/jquery.min.js"></script>
