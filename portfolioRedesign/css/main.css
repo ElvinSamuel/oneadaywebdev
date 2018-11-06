@@ -23,6 +23,7 @@ body {
     /*overflow: hidden;*/
     width: 100%;
     height: 100%;
+    background-color: #333;
     position: absolute;
     top: 0;
     left: 0;
@@ -38,10 +39,12 @@ nav {
     left: 0;
     width: 100%;
     height: auto;
+    background-color: #00688B;
 }
 
 nav > a {
     margin: 20px;
+    color: white;
     font-size: 1.5em;
     text-decoration: none;
 }
@@ -58,13 +61,17 @@ nav > a {
     margin: auto;
     display:block;
     border:none;
+    color:white;
     height:1px;
+    background:black;
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
 }
 
 scroll-container {
   display: block;
   position: absolute;
+  color: white;
+  
   top: 0;
   left: 0;
   width: 100%;
@@ -93,6 +100,7 @@ scroll-page {
     width: 80%;
     height: 60%;
     margin: 50px auto;
+    /*background-color: #555;*/
     /*white-space: nowrap;*/
     text-align: center;
 }
@@ -114,6 +122,7 @@ scroll-page {
     height: 200px;
     background-color: #222;
     border-radius: 50%;
+    border: 2px solid white;
     margin: auto;
 }
 
@@ -122,17 +131,19 @@ scroll-page {
 }
 
 #home {
+    background-color: #333;
 }
 
 #resume {
-    height: auto;
+    background-color: #111;
 }
 
 #about {
-    
+    background-color: #4A0000;
 }
 
 #contact {
+    background-color: #00688B;
     opacity: 0.9;
     text-align: center;
 }
@@ -154,7 +165,7 @@ scroll-page {
 }
 
 #barInstructions > span {
-    
+    color: WhiteSmoke;
 }
 
 #barInstructions > span:hover {
@@ -167,6 +178,8 @@ scroll-page {
     margin: 0;
     padding: 0;
     display: inline-block;
+    background-color: #111;
+    color: WhiteSmoke;
     text-align: center;
     
 }
@@ -177,8 +190,14 @@ scroll-page {
     margin: 0;
     padding: 0;
     display: inline-block;
+    background-color: black;
 }
 
+#spacer {
+    height: 10%;
+}
+
+/*
 #footer {
     height: auto;
     padding: 0;
@@ -186,8 +205,20 @@ scroll-page {
     white-space: nowrap;
     font-size: .8em;
     text-align: center;
+    background: black;
 }
+*/
 
+#footer {
+    position: absolute;
+    bottom: 0;
+    background: black;
+    color: WhiteSmoke;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    font-size: .8em;
+}
 .socialMedia {
     z-index: 1;
     position: fixed;
@@ -207,6 +238,7 @@ scroll-page {
 
 .socialMedia > a {
     text-decoration: none;
+    color: #00688B;
 }
 
 .socialMedia > a > i {
@@ -215,13 +247,23 @@ scroll-page {
     left: 13px;
 }
 
-#linkedin {
-    bottom: 90px;
+
+#github {
+    bottom: 210px;
 }
 
 #codepen {
     bottom: 150px;
 }
+
+#linkedin {
+    bottom: 90px;
+}
+
+
+
+
+
 
 /* ============= Contact Form Stuff ============== */
 
@@ -278,6 +320,7 @@ input[name="email"] {
     margin-top: 20px;
     border-radius: 25px;
     text-align: center;
+    color: black;
 }
 
 input[type="textarea"] { 
@@ -317,7 +360,8 @@ input[type="textarea"] {
     z-index: 1;
     bottom: 0;
     left: 0;
-    opacity: 0.9;
+    background-color: #012;
+    opacity: 0.95;
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -360,6 +404,8 @@ form > span {
 
 span > input[type="submit"] {
     width: 30%;
+    background-color: #00688B;
+    color: WhiteSmoke;
     font-size: 1.3em;
     border: 2px solid WhiteSmoke;
     margin-top: 20px;
@@ -369,7 +415,10 @@ span > input[type="submit"] {
 
 span > input[type="button"] {
     width: 30%;
+    background-color: #4A0000;
+    color: WhiteSmoke;
     font-size: 1.3em;
+    border: 2px solid WhiteSmoke;
     margin-top: 20px;
     border-radius: 25px;
     text-align: center;
@@ -384,4 +433,17 @@ span > input[type="button"] {
     top: 15px;
     right: 35px;
   }
+}
+
+@media (min-width: 1300px) {
+    
+    scroll-page {
+        width: 60%;
+        margin: auto;
+    }
+    
+    form {
+        width: 60%;
+        margin: auto;
+    }
 }
