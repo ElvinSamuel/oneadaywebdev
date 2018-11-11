@@ -1,0 +1,3 @@
+# I only want to ignore this folder since I want to start a new git repo with it.
+/tyrion
+debug.log

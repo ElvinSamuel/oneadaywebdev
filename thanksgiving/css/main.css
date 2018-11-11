@@ -8,7 +8,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     font-family: 'Ovo', serif;
-    /*overflow: hidden;*/
+    overflow: auto;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -21,13 +21,125 @@ body {
 p {
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 9em;
+    font-size: 1em;
     padding: 0;
     margin: 0;
 }
 
-div {
+nav {
+    /*position: fixed;*/
+    top: 100px;
+    z-index: 1;
+    width: 100%;
+    height: auto;
     text-align: center;
-    position: relative;
-    top: 125px;
+    /*background-color: #6E612F;*/
+    opacity: 1.0; /* I'll adjust that when users scroll. */
+}
+
+nav > a {
+    margin: 20px;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+scroll-container {
+  display: block;
+  position: absolute;
+  color: white;
+  
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+scroll-page {
+  display: block;
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  width: 100%;
+  height: 100%;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.pageName {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.underline { 
+    width: 70%;
+    margin: auto;
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
+}
+
+#title {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 3em;
+}
+
+#home {
+    background-color: #E3C598;
+}
+
+#about {
+    background-color: #F59A44;
+}
+
+#turkeyPic {
+    background: url('./../img/turkey.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    width: 40%;
+    height: 50%;
+}
+
+#products {
+    background-color: #4A0000;
+}
+
+#contact {
+    background-color: #8A6E64;
+    text-align: center;
+}
+
+#thanks {
+    background-color: #6E352C;
+}
+
+#footer {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    font-size: .8em;
+    text-align: center;
+    background: #6E612F;
+}
+
+#spacer {
+    height: 150px;
+    background-color: #6E612F;
+    margin-top: 0;
+    margin-bottom: 0;
 }

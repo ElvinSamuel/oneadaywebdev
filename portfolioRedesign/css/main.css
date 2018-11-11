@@ -23,7 +23,7 @@ body {
     /*overflow: hidden;*/
     width: 100%;
     height: 100%;
-    background-color: #333;
+    background-color: #DDD;
     position: absolute;
     top: 0;
     left: 0;
@@ -193,11 +193,6 @@ scroll-page {
     background-color: black;
 }
 
-#spacer {
-    height: 10%;
-}
-
-/*
 #footer {
     height: auto;
     padding: 0;
@@ -207,18 +202,7 @@ scroll-page {
     text-align: center;
     background: black;
 }
-*/
 
-#footer {
-    position: absolute;
-    bottom: 0;
-    background: black;
-    color: WhiteSmoke;
-    text-align: center;
-    width: 100%;
-    padding: 0;
-    font-size: .8em;
-}
 .socialMedia {
     z-index: 1;
     position: fixed;
@@ -247,23 +231,13 @@ scroll-page {
     left: 13px;
 }
 
-
-#github {
-    bottom: 210px;
+#linkedin {
+    bottom: 90px;
 }
 
 #codepen {
     bottom: 150px;
 }
-
-#linkedin {
-    bottom: 90px;
-}
-
-
-
-
-
 
 /* ============= Contact Form Stuff ============== */
 
@@ -361,7 +335,7 @@ input[type="textarea"] {
     bottom: 0;
     left: 0;
     background-color: #012;
-    opacity: 0.95;
+    opacity: 0.9;
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -436,13 +410,7 @@ span > input[type="button"] {
 }
 
 @media (min-width: 1300px) {
-    
-    scroll-page {
-        width: 60%;
-        margin: auto;
-    }
-    
-    form {
+    scroll-container{
         width: 60%;
         margin: auto;
     }
