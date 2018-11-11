@@ -31,7 +31,7 @@
                 <img src="./img/ES.png"></img>
             </a>
             <a href="#resume">Done</a>
-            <a href="#about">Doing</a>
+            <a href="#about">Resume</a>
             <a href="#contact">Contact</a>
         </nav>
         
@@ -95,7 +95,19 @@
                     </p>
                 </div>
                 
-                <iframe src="http://www.PumpernickelPodcast.com" frameborder="0"></iframe>
+                <div>
+                    
+                    <iframe src="http://www.PumpernickelPodcast.com" frameborder="0"></iframe>
+                    <iframe></iframe>
+                    <iframe></iframe>
+                <!--
+                    <iframe></iframe>
+                    <iframe></iframe>
+                    <iframe></iframe>
+                -->
+                    
+                </div>
+                
                 
             </scroll-page>
             
@@ -110,16 +122,16 @@
                     
                     <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
                     <div class="overlay-content">
-                        <form>
-                        <input type="text" name="name" placeholder="What's your name?"/>
-                        <input type="email" name="email" placeholder="Email?"/>
-                        <input type="textarea" name="" placeholder="What can I do for you?"/>
-                        
-                        <span>
-                            <input type="submit" value="Submit"/>
-                            <input type="button" value="Back" name="" onclick="closeForm()"/>
-                        </span>
-                    </form>
+                        <form name="emailMe" method="POST" action="form.php">
+                            <input type="text" name="name" placeholder="What's your name?"/>
+                            <input type="email" name="email" placeholder="Email?"/>
+                            <input type="textarea" name="comments" placeholder="What can I do for you?"/>
+                            
+                            <span>
+                                <input type="submit" value="Submit"/>
+                                <input type="button" value="Back" name="" onclick="closeForm()"/>
+                            </span>
+                        </form>
                     </div>
                     
                 </div>
@@ -128,7 +140,7 @@
             </scroll-page>
             
             <scroll-page id="spacer">
-                
+                    <p>ElvinSamuel.com&copy; Is Copywritten By Absolutely No One. Feel free to use the design if you like it. Check it out on my <a href="#">GitHub</a>.</p>
             </scroll-page>
             
         </scroll-container>
